@@ -334,12 +334,6 @@
         }
 
         /* Contact Section */
-        .contact {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #10b981 100%);
-            color: white;
-            text-align: center;
-        }
 
         .contact h2 {
             font-size: 2rem;
@@ -347,37 +341,7 @@
             margin-bottom: 1.5rem;
         }
 
-        .contact-subtitle {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            margin-bottom: 3rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 3rem;
-        }
-
-        .contact-item {
-            background: rgba(255,255,255,0.15);
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
-        }
-
+      
         .contact-item h4 {
             font-size: 1rem;
             margin-bottom: 0.8rem;
@@ -387,25 +351,6 @@
         .contact-item p {
             font-size: 1rem;
             margin: 0;
-        }
-
-        .main-cta {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            color: white;
-            padding: 1rem 2.5rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.05rem;
-            border: 2px solid rgba(255,255,255,0.3);
-            transition: all 0.3s ease;
-        }
-
-        .main-cta:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         }
 
         /* Footer */
@@ -438,12 +383,6 @@
                 padding: 2rem;
             }
 
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-                gap: 1.5rem;
-            }
-
             .section-title {
                 font-size: 1.6rem;
             }
@@ -452,9 +391,7 @@
         @media (max-width: 480px) {
             .container { padding: 0 15px; }
             .hero { padding: 3rem 0 2rem; }
-            .main-services, .additional-services, .about, .contact {
-                padding: 3rem 0;
-            }
+            .main-services, .additional-services, .about
         }
     </style>
 </head>
@@ -476,7 +413,7 @@
         <div class="container">
             <div style="display: flex; align-items: center; gap: 3rem; max-width: 1000px; margin: 0 auto;">
                 <div class="hero-logo">
-                    <img src="logo.png" alt="PetermanWorks Logo" style="max-width: 250px; height: auto;">
+                    <img src="logo-hero.png" alt="PetermanWorks Logo" style="max-width: 250px; height: auto;">
                 </div>
                 <div class="hero-text">
                     <h1>Hi, we're the Petermans - here to help with your home and wellness needs</h1>
