@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetermanWorks - Professional Services</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for the scroll-to-top button */
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 9999px;
+            background-color: #6366f1; /* Indigo 500 */
+            transition: background-color 0.3s ease;
+        }
+        #scrollTopBtn:hover {
+            background-color: #4f46e5; /* Indigo 600 */
+        }
+        /* Custom hero background with multiple services represented */
+        .hero-background {
+            background-image: url('https://placehold.co/1920x1080/4f46e5/ffffff?text=Lawncare+%2F+Photography+%2F+Handyman+%2F+Audio+%2F+Healthy+Living');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header and Navigation -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo/Brand Name -->
+        <a href="#hero" class="text-2xl font-bold text-gray-800 tracking-tight">Peterman<span class="text-indigo-600">Works</span></a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#services" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium">Services</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium">About</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <nav class="flex flex-col items-center py-4 space-y-4">
+            <a href="#services" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium w-full text-center">Services</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium w-full text-center">About</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300 font-medium w-full text-center">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="relative hero-background text-white min-h-screen flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="z-10 text-center max-w-2xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+            <span class="block">Your Partner for Quality Services.</span>
+        </h1>
+        <p class="text-lg sm:text-xl font-light mb-8">
+            From lawncare to professional audio, we have you covered with expertise and care.
+        </p>
+        <a href="#services" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors duration-300 transform hover:scale-105 inline-block">
+            Discover Our Services
+        </a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Diverse Services</h2>
+            <p class="text-gray-600 text-lg">One company for all your needs. We're dedicated to providing expert solutions with a personal touch.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Block 1: Lawncare -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Lawncare -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 0v4m0-4h4m-4 0H8m-2 8l4-4v-4m-4-4l4-4h8l4 4-4 4h-4v4l4 4H6z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Lawncare</h3>
+                <p class="text-gray-600">Keeping your outdoor space pristine and beautiful with professional care.</p>
+            </div>
+
+            <!-- Service Block 2: Photography -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Photography -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.894-1.787A2 2 0 0110.158 4h3.684a2 2 0 011.664.89l.894 1.787A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Photography</h3>
+                <p class="text-gray-600">Capturing life's most precious moments with a professional and creative eye.</p>
+            </div>
+
+            <!-- Service Block 3: Video Production -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Video Production -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M4 14v-4m0 0H3m1 4h1m-1-4V8a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2v-4z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Video Production</h3>
+                <p class="text-gray-600">From concept to final cut, we create compelling visual stories that resonate with your audience.</p>
+            </div>
+
+            <!-- Service Block 4: Handyman Services -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Handyman -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.5-4.5a1.5 1.5 0 013 0v2a1.5 1.5 0 01-3 0v-2zm-12 1a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2V8a2 2 0 00-2-2H9z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Handyman Services</h3>
+                <p class="text-gray-600">Reliable and expert help for all your home repair and maintenance needs, big or small.</p>
+            </div>
+
+            <!-- Service Block 5: Professional Audio -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Professional Audio -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11v1a7 7 0 01-14 0v-1m14 0a7 7 0 01-14 0m14 0a3 3 0 00-3-3h-1m-10 0a3 3 0 00-3 3v1m10 0v-1m-10 0v1m10 0a3 3 0 00-3 3v1a2 2 0 01-2 2h-2a2 2 0 01-2-2v-1a3 3 0 00-3-3m10 0v-1m-10 0v1m10 0a3 3 0 00-3-3h-1m-10 0a3 3 0 00-3 3v1"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Professional Audio</h3>
+                <p class="text-gray-600">High-quality sound for events, podcasts, music, and more. Our experts deliver crystal-clear results.</p>
+            </div>
+
+            <!-- Service Block 6: Healthy Living -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center border border-gray-100">
+                <div class="w-16 h-16 mx-auto mb-4 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center">
+                    <!-- SVG Icon for Healthy Living -->
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Healthy Living</h3>
+                <p class="text-gray-600">Guidance and resources for a healthier, more balanced lifestyle through informed choices.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 md:py-24 bg-gray-100">
+    <div class="container mx-auto px-4 text-center max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About PetermanWorks</h2>
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Founded on the principle of providing high-quality, reliable, and diverse services, PetermanWorks is your go-to partner for a wide range of needs. We are a team of passionate professionals dedicated to bringing a personal touch and expert skill to every project, no matter how big or small. Our mission is to simplify your life by offering multiple solutions under one trusted name.
+        </p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 text-lg">Send us a message and we'll get back to you as soon as possible.</p>
+        </div>
+
+        <div class="max-w-xl mx-auto">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-200"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center text-sm">
+        <p class="mb-2">&copy; 2025 PetermanWorks. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
+
+<script>
+    // JavaScript for mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the mobile menu when a link is clicked
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // JavaScript for scroll-to-top button functionality
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Show or hide the button based on scroll position
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to the top of the document
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+</body>
+</html>
